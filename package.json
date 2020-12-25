@@ -1,0 +1,26 @@
+{
+  "name": "image-shrink",
+  "productName": "ImageShrink",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "nodemon --exec electron .",
+    "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=assets/icons/Icon_1024x1024.png --prune=false --out=release-builds"
+  },
+  "author": "Nikita Volkov",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.1.1",
+    "electron-packager": "^15.2.0",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "electron-log": "^4.3.1",
+    "imagemin": "^7.0.1",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.1",
+    "slash": "^3.0.0"
+  }
+}
